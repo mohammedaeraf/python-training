@@ -18,11 +18,11 @@ last_course = courses.pop()
 print(last_course)
 
 # length of list
-course_count = len(courses)
-print(course_count)
+x = len(courses)
+print(x)
 
 # loop through list
 print("**** List of Courses *****")
-for i in range(len(courses)):
+for i in range(x):
     j = i + 1
     print("Course #" + str(j) + " -> " + courses[i])
