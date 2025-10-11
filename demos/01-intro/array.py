@@ -1,3 +1,7 @@
+# Arrays in Python are called Lists
+age = 16
+
+# a List of strings
 fruits = ["apple", "banana", "cherry"]
 print(fruits[0])  # Output: apple
 

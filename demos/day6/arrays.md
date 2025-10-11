@@ -1,4 +1,3 @@
-
 ### 🧮 **1️⃣ Program to Find the Sum of All Elements in an Array**
 
 ```python
@@ -23,18 +22,6 @@ min_num = min(numbers)
 
 print("Maximum =", max_num)
 print("Minimum =", min_num)
-```
-
----
-
-### 🔁 **3️⃣ Program to Reverse an Array**
-
-```python
-numbers = [10, 20, 30, 40, 50]
-
-reversed_array = numbers[::-1]
-print("Original Array:", numbers)
-print("Reversed Array:", reversed_array)
 ```
 
 ---
@@ -69,3 +56,17 @@ if search in numbers:
 else:
     print(search, "is not found in the array.")
 ```
+
+---
+
+### 🔁 **3️⃣ Program to Reverse an Array**
+
+```python
+numbers = [10, 20, 30, 40, 50]
+
+reversed_array = numbers[::-1]
+print("Original Array:", numbers)
+print("Reversed Array:", reversed_array)
+```
+
+---
