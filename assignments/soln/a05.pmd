@@ -1,0 +1,178 @@
+Perfect! Here’s the **solution sheet** for the Nested Loops assignment — all programs implemented in **Python** using both `for` and `while` loops where applicable.
+
+---
+
+## 🧩 **Solutions: Nested Loops in Python**
+
+---
+
+### **1️⃣ Display Multiplication Tables from 1 to 5**
+
+#### Using `for` loops:
+
+```python
+for i in range(1, 6):
+    print(f"\nMultiplication Table of {i}")
+    print("-" * 20)
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j}")
+```
+
+#### Using `while` loops:
+
+```python
+i = 1
+while i <= 5:
+    print(f"\nMultiplication Table of {i}")
+    print("-" * 20)
+    j = 1
+    while j <= 10:
+        print(f"{i} x {j} = {i * j}")
+        j += 1
+    i += 1
+```
+
+---
+
+### **2️⃣ Print a Number Pyramid**
+
+#### Using `for` loops:
+
+```python
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print(j, end=" ")
+    print()
+```
+
+#### Using `while` loops:
+
+```python
+rows = 5
+i = 1
+while i <= rows:
+    j = 1
+    while j <= i:
+        print(j, end=" ")
+        j += 1
+    print()
+    i += 1
+```
+
+**Output:**
+
+```
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+```
+
+---
+
+### **3️⃣ Print a Star Pyramid**
+
+#### Using `for` loops:
+
+```python
+rows = 5
+for i in range(1, rows + 1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+```
+
+#### Using `while` loops:
+
+```python
+rows = 5
+i = 1
+while i <= rows:
+    j = 1
+    while j <= i:
+        print("*", end=" ")
+        j += 1
+    print()
+    i += 1
+```
+
+**Output:**
+
+```
+*
+* *
+* * *
+* * * *
+* * * * *
+```
+
+---
+
+### **4️⃣ Display a Reverse Number Pyramid**
+
+#### Using `for` loops:
+
+```python
+rows = 5
+for i in range(rows, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()
+```
+
+#### Using `while` loops:
+
+```python
+rows = 5
+i = rows
+while i >= 1:
+    j = i
+    while j >= 1:
+        print(j, end=" ")
+        j -= 1
+    print()
+    i -= 1
+```
+
+**Output:**
+
+```
+5 4 3 2 1
+4 3 2 1
+3 2 1
+2 1
+1
+```
+
+---
+
+### **5️⃣ Multiplication Tables of a User-Defined Number `n`**
+
+#### Using `for` loops:
+
+```python
+n = int(input("Enter a number: "))
+
+for i in range(1, n + 1):
+    print(f"\nMultiplication Table of {i}")
+    print("-" * 20)
+    for j in range(1, 11):
+        print(f"{i} x {j} = {i * j}")
+```
+
+#### Using `while` loops:
+
+```python
+n = int(input("Enter a number: "))
+i = 1
+while i <= n:
+    print(f"\nMultiplication Table of {i}")
+    print("-" * 20)
+    j = 1
+    while j <= 10:
+        print(f"{i} x {j} = {i * j}")
+        j += 1
+    i += 1
+```
