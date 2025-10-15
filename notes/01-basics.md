@@ -1,182 +1,194 @@
-Perfect 👍 — let’s create **beginner-friendly tutorial notes for Week 1** of your **20-day Python course**.
-Each session is just **20 minutes**, so the notes are **short, clear, and demo-oriented** with examples + mini exercises.
+# 🐍 **Python Basics – Variables, Statements, Print, and Input**
 
 ---
 
-# 🐍 Python Course – Week 1 Notes (Days 1–5)
+## 🔹 1. Introduction
+
+Now that Python is installed and ready, let’s start writing some code!
+In this tutorial, you’ll learn about:
+
+* Variables
+* Statements
+* Printing output
+* Taking user input
 
 ---
 
-## **Day 1 – Introduction & Setup**
+## 🔹 2. Variables in Python
 
-### 🔹 What is Python?
+A **variable** is a name used to store a value in memory.
 
-* High-level, easy-to-learn programming language
-* Used in:
+### ✨ Example:
 
-  * Web Development (Django, Flask)
-  * Data Science (NumPy, Pandas, Matplotlib)
-  * AI & ML (TensorFlow, PyTorch)
-  * Automation & Scripting
+```python
+name = "Alice"
+age = 20
+height = 5.6
+```
 
-### 🔹 Installation & Setup
+Here:
 
-1. Download from [python.org](https://www.python.org/downloads/)
-2. Install **VS Code** (editor)
-3. Run first program:
+* `name` → stores a **string**
+* `age` → stores an **integer**
+* `height` → stores a **float (decimal number)**
+
+### ✅ Rules for Naming Variables:
+
+* Must start with a **letter or underscore** (`_`)
+* Can contain **letters, numbers, and underscores**
+* **Case-sensitive** (`Age` ≠ `age`)
+* Should not be a **Python keyword** (`for`, `if`, `class`, etc.)
+
+### ⚠️ Invalid Examples:
+
+```python
+2name = "John"    # ❌ starts with a number
+first-name = "Ali" # ❌ hyphen not allowed
+```
+
+---
+
+## 🔹 3. Statements
+
+A **statement** is a single line of code that performs an action.
+Examples:
+
+```python
+x = 10          # assignment statement
+y = 20
+sum = x + y     # expression statement
+print(sum)      # function call statement
+```
+
+Python executes statements **from top to bottom**.
+
+---
+
+## 🔹 4. The `print()` Function
+
+Used to **display output** on the screen.
+
+### Example:
 
 ```python
 print("Hello, World!")
+print("My name is Alice")
+print("I am", 20, "years old")
 ```
 
-✅ **Exercise:**
-Write a program that prints your name and favorite hobby.
+**Output:**
+
+```
+Hello, World!
+My name is Alice
+I am 20 years old
+```
+
+You can also **format text**:
+
+```python
+name = "Ali"
+age = 21
+print(f"My name is {name} and I am {age} years old.")
+```
+
+**Output:**
+
+```
+My name is Ali and I am 21 years old.
+```
 
 ---
 
-## **Day 2 – Variables & Data Types**
+## 🔹 5. The `input()` Function
 
-### 🔹 Variables
+Used to **take input** from the user.
 
-* Containers for storing data
-* No need to declare type explicitly
-
-```python
-x = 10        # integer
-name = "Ali"  # string
-pi = 3.14     # float
-is_active = True  # boolean
-```
-
-### 🔹 Checking Type
-
-```python
-print(type(x))        # <class 'int'>
-print(type(pi))       # <class 'float'>
-```
-
-✅ **Exercise:**
-Create variables for:
-
-* Your age
-* Your height
-* Your name
-* Whether you are a student (True/False)
-
----
-
-## **Day 3 – Input & Output**
-
-### 🔹 Printing (Output)
-
-```python
-name = "Sara"
-age = 20
-print("My name is", name, "and I am", age, "years old")
-print(f"My name is {name} and I am {age} years old")  # f-string
-```
-
-### 🔹 Input (User Input)
+### Example:
 
 ```python
 name = input("Enter your name: ")
 print("Hello", name)
 ```
 
-⚠️ Note: input() returns **string**
+**Output:**
 
-```python
-age = int(input("Enter your age: "))  # convert to int
+```
+Enter your name: Alice
+Hello Alice
 ```
 
-✅ **Exercise:**
-Write a program that asks for two numbers and prints their sum.
+🧠 **Note:**
+`input()` always returns a **string**.
+If you want a number, convert it using `int()` or `float()`.
+
+### Example:
+
+```python
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+sum = num1 + num2
+print("Sum =", sum)
+```
 
 ---
 
-## **Day 4 – Operators**
+## 🔹 6. Example Programs
 
-### 🔹 Arithmetic Operators
-
-```python
-x, y = 10, 3
-print(x + y)  # 13
-print(x - y)  # 7
-print(x * y)  # 30
-print(x / y)  # 3.333
-print(x // y) # 3 (floor division)
-print(x % y)  # 1 (remainder)
-print(x ** y) # 1000 (power)
-```
-
-### 🔹 Comparison Operators
+### 🧮 Program 1: Add Two Numbers
 
 ```python
-print(x > y)   # True
-print(x == y)  # False
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("The sum is:", a + b)
 ```
 
-### 🔹 Logical Operators
+### 🎂 Program 2: Display Name and Age
 
 ```python
-a, b = True, False
-print(a and b)  # False
-print(a or b)   # True
-print(not a)    # False
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello", name + "!", "You are", age, "years old.")
 ```
 
-✅ **Mini-Project:**
-Simple calculator that takes 2 numbers and prints: sum, difference, product, division.
+### 🌡️ Program 3: Convert Celsius to Fahrenheit
+
+```python
+celsius = float(input("Enter temperature in Celsius: "))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit:", fahrenheit)
+```
 
 ---
 
-## **Day 5 – Conditional Statements**
+## 🔹 7. Summary
 
-### 🔹 If / Elif / Else
+✅ You learned:
 
-```python
-percent = 75
-
-if percent >= 80:
-    print("Grade A")
-elif percent >= 60:
-    print("Grade B")
-elif percent >= 40:
-    print("Grade C")
-else:
-    print("Grade D")
-```
-
-### 🔹 Example – Even/Odd
-
-```python
-num = int(input("Enter a number: "))
-
-if num % 2 == 0:
-    print("Even")
-else:
-    print("Odd")
-```
-
-✅ **Mini-Project:**
-Write a program to input marks and print:
-
-* A if >= 80
-* B if >= 60
-* C if >= 40
-* D otherwise
+* What variables are
+* Writing simple statements
+* Printing output using `print()`
+* Taking input from users using `input()`
+* Converting input values to numbers
 
 ---
 
-# 🎯 Week 1 Recap
+## 🔹 8. Practice Assignment
 
-* Printing and input
-* Variables & data types
-* Operators
-* If/elif/else
+Try these on your own:
 
-👉 By end of Week 1, students can write **basic interactive programs** like calculators and grade checkers.
+1. Write a program to ask your name and favorite color, then print:
 
----
+   ```
+   Hello John, your favorite color is Blue.
+   ```
 
-Would you like me to also prepare **Week 1 Assignments (5–6 practice questions)** so your students can try after class?
+2. Take two numbers and print their product.
+
+3. Write a program to find the area of a rectangle using `length * width`.
+
+4. Ask user for city and temperature, then print:
+
+   ```
+   The temperature in Mangalore is 29°C.
+   ```
