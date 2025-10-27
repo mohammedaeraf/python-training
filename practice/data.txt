@@ -1,0 +1,2 @@
+Python is an easy language.
+It is fun to learn Python and code in it.

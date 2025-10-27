@@ -104,29 +104,27 @@ f.close()
 
 ---
 
-## 🟢 **7. Using `with` Statement (Best Practice)**
-
-This automatically closes the file after use.
-
-```python
-with open("data.txt", "r") as f:
-    for line in f:
-        print(line.strip())
-```
-
----
 
 ## 🧩 **Mini Project – Save User Notes**
 
 ```python
+# Program to save user notes (without using 'with open')
+
 filename = "user_notes.txt"
 
 note = input("Enter your note: ")
 
-with open(filename, "a") as f:
-    f.write(note + "\n")
+# Open the file in append mode
+f = open(filename, "a")
+
+# Write the note to the file
+f.write(note + "\n")
+
+# Always close the file after writing
+f.close()
 
 print("Note saved successfully!")
+
 ```
 
 ✅ Run it multiple times — each note will be appended.

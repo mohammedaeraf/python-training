@@ -1,0 +1,3 @@
+This is a new note.
+Remember to review and lint the code.
+Adding another line to the notes.
