@@ -67,6 +67,33 @@ finally:
 
 ---
 
+## 🟢 **5. Raising Exceptions Manually**
+
+You can raise your own exceptions using `raise`.
+
+```python
+age = int(input("Enter your age: "))
+
+if age < 0:
+    raise ValueError("Age cannot be negative!")
+else:
+    print("Your age is", age)
+```
+
+---
+
+## 🟢 **6. Example: Handling File Errors**
+
+```python
+try:
+    with open("data.txt", "r") as f:
+        content = f.read()
+        print(content)
+except FileNotFoundError:
+    print("File not found! Please check the filename.")
+```
+
+---
 
 ## 🧩 **Mini Project – Safe Calculator**
 
@@ -92,4 +119,6 @@ safe_divide(x, y)
 
 1. Write a program to handle invalid integer input from the user.
 2. Create a calculator that catches invalid operations and zero division.
-
+3. Handle file read errors (like missing or unreadable files).
+4. Write a program that accepts age input and raises an exception for invalid age (<0 or >120).
+5. Simulate ATM withdrawal – raise error if balance is insufficient.
