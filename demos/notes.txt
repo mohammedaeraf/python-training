@@ -1,0 +1,3 @@
+Python is a very powerful programming language.
+It is widely used for web development, data analysis, artificial intelligence, and more.
+Python has a large and active community that contributes to its growth and development.
